@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@bundleperf/shared/feature": ["libs/shared/feature/src/index.ts"],
+      "@bundleperf/demo-app/feature": ["libs/demo-app/feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
