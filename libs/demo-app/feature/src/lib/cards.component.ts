@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'bundleperf-cards',
   standalone: true,
-  imports: [CommonModule],
-  template: `<p>All bank cards here..</p>`,
+  template: `<p>All bank cards here..</p>
+    {{ date }}`,
   styles: `
     :host {
       display: block;
     }
   `,
 })
-export class CardsComponent {}
+export class CardsComponent {
+  date = DateTime.now();
+}
